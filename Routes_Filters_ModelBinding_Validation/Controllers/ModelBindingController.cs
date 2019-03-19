@@ -37,5 +37,7 @@ namespace Routes_Filters_ModelBinding_Validation.Controllers
     public ViewResult NamesList(IList<string> names) => View(names ?? new List<string>());
 
     public ViewResult Address(IList<AddressSummary> addresses) => View(addresses ?? new List<AddressSummary>());
-  }
+
+    public ViewResult CreatePet() => View(new Pet());
+    }
 }
